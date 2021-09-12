@@ -13,6 +13,7 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
+    div.classList.add("border-2");
     div.innerHTML = `<div class="single-product">
       <div>
     <img class="product-image" src=${image}></img>
@@ -74,9 +75,6 @@ const updateTaxAndCharge = () => {
 
 //grandTotal update function
 const updateTotal = () => {
-  console.log(getInputValue("price"));
-  console.log(getInputValue("delivery-charge"));
-  console.log(getInputValue("total-tax"));
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
