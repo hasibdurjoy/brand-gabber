@@ -24,12 +24,12 @@ const showProducts = (products) => {
       <div class="card-body">
         <h5 class="card-title">${product.title}</h5>
         <p>Category: ${product.category}</p>
-        <h2>Price: $ ${product.price}</h2>
         <p>Rating : ${product.rating.rate} ( Total Review : ${product.rating.count} )</p>
+        <h3>Price: $ ${product.price}</h3>
       </div>
       <div class="p-3 d-flex justify-content-around">
-        <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-        <button id="details-btn" class="btn btn-primary">Details</button></div>
+        <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart <i class="fas fa-shopping-cart"></i></button>
+        <button id="details-btn" class="btn btn-primary"><i class="fas fa-info-circle"></i> Details</button></div>
       </div>
     </div>
       `;
