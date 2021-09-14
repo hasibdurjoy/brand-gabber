@@ -1,7 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f3f5f9 !important;
 }
 .search-field {
   border: none;
@@ -41,6 +41,7 @@ body {
 }
 .card{
   background-color: rgba(161, 217, 223, 0.288) !important;
+  border-width: 3px !important;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
