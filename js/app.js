@@ -1,10 +1,12 @@
+/* load products function  */
+
 const loadProducts = () => {
   const url = `https://fakestoreapi.com/products`;
-  //const url = `https://raw.githubusercontent.com/ProgrammingHero1/ranga-store-api/main/ranga-api.json?fbclid=IwAR3uRdj_vkGTeApyvMUErNDQmVm3JmbnYyx1YVr0Uyvh26VzMvFTDN0innY`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => showProducts(data));
 };
+/* calling loadProducts function to load data  */
 loadProducts();
 
 // show all product in UI 
@@ -35,6 +37,8 @@ const showProducts = (products) => {
     document.getElementById('loading-spinner').style.display = 'none';
   }
 };
+
+/* addto cart function  */
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
@@ -45,6 +49,7 @@ const addToCart = (id, price) => {
   updateTotal();
 };
 
+/* getInputValue function  */
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
