@@ -19,7 +19,7 @@ const showProducts = (products) => {
     div.classList.add("single-product");
     div.classList.add("text-center");
     div.innerHTML = `
-    <div class="card h-100">
+    <div class="card h-100 ">
       <img src=${image} class="card-img-top product-image p-4" alt="...">
       <div class="card-body">
         <h5 class="card-title">${product.title}</h5>
